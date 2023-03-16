@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S 4CFILE
+gcc -S $CFILE
