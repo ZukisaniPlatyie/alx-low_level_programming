@@ -4,7 +4,7 @@
 
 /**
  * main - print if the generated random number is positive, zero, or negative
- * return : (0) (success)
+ * Return: 0 always
  */
 
 int main(void)
@@ -12,6 +12,7 @@ int main(void)
 	int n;
 
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
