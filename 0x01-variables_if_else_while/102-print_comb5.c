@@ -23,12 +23,10 @@ int main(void)
 					putchar(c);
 					if ((c <= 48) && (d <= 48))
 					{
-						putchar(d + 1);
+						d = 49;
 					}
-					else
-					{
-						putchar(d);
-					}
+					putchar(d);
+
 					if ((a == 57) && (b == 56) && (c == 57) && (d == 57))
 					{
 					}
