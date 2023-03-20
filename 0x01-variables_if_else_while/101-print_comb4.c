@@ -18,7 +18,7 @@ int main(void)
 				putchar(a);
 				putchar(b);
 				putchar(c);
-				if (c != 57)
+				if (a != 57)
 				{
 					putchar(',');
 					putchar(' ');
@@ -26,11 +26,8 @@ int main(void)
 				if (c == 57)
 				{
 					c++;
+					b++;
 				}
-			}
-			if (b == 57)
-			{
-				b++;
 			}
 		}
 	}
