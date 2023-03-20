@@ -21,7 +21,9 @@ int main(void)
 			putchar(' ');
 
 			if (x == 58)
+			{
 				i++;
+			}
 		}
 	}
 	putchar('\n');
