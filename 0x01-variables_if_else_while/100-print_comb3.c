@@ -23,7 +23,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			else if (x == 57)
+			if (x == 57)
 			{
 				i++;
 			}
