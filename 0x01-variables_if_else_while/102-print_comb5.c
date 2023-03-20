@@ -21,7 +21,14 @@ int main(void)
 					putchar(b);
 					putchar(' ');
 					putchar(c);
-					putchar(d);
+					if ((c <= 48) && (d <= 48))
+					{
+						putchar(d + 1);
+					}
+					else
+					{
+						putchar(d);
+					}
 					if ((a == 57) && (b == 56) && (c == 57) && (d == 57))
 					{
 					}
