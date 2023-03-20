@@ -7,13 +7,15 @@
 
 int main(void)
 {
-	int a, b, c;
+	int a, b, c, i;
+
+	i = 50;
 
 	for (a = 48; a < 58; a++)
 	{
 		for (b = 49; b < 58; b++)
 		{
-			for (c = 50; c < 58; c++)
+			for (c = i; c < 58; c++)
 			{
 				putchar(a);
 				putchar(b);
@@ -23,12 +25,8 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				if (c == 57)
-				{
-					c++;
-					b++;
-				}
 			}
+			i++;
 		}
 	}
 	putchar('\n');
