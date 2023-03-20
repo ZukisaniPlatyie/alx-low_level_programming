@@ -9,13 +9,11 @@ int main(void)
 {
 	int a, b, c, i;
 
-	i = 50;
-
 	for (a = 48; a < 58; a++)
 	{
-		for (b = 49; b < 58; b++)
+		for (b = (a + 1); b < 58; b++)
 		{
-			for (c = i; c < 58; c++)
+			for (c = (b + 1); c < 58; c++)
 			{
 				putchar(a);
 				putchar(b);
@@ -26,7 +24,6 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			i++;
 		}
 	}
 	putchar('\n');
