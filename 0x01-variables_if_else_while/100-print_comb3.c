@@ -17,10 +17,13 @@ int main(void)
 		{
 			putchar(n);
 			putchar(x);
-			putchar(',');
-			putchar(' ');
 
-			if (x == 57)
+			if ((n != 56) && (x != 57))
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			else if (x == 57)
 			{
 				i++;
 			}
