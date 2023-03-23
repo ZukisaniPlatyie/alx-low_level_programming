@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+/**
+ * main - print the 1st 50 fabonacci numbers starting with 1 and 2
+ *
+ * Return: 0 always
+ */
+
+int main(void)
+{
+	int a = 0;
+	long b = 1, c = 2;
+
+	while (a < 50)
+	{
+		if (a == 0)
+		{
+			printf("%ld", b);
+		}
+		else if (a == 1)
+		{
+			printf("%ld", c);
+		}
+		else
+		{
+			c += b;
+			b = c - b;
+			printf(", %ld", b);
+		}
+		a++;
+	}
+	printf("\n");
+	return (0);
+}
