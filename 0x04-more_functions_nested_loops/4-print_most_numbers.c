@@ -8,16 +8,16 @@
 
 void print_most_numbers(void)
 {
-	int x = 0;
+	int x = 48;
 
-	for (; x <= 9; x++)
+	for (; x <= 57; x++)
 	{
-		if (x == 2 || x == 4)
+		if (x == 50 || x == 52)
 		{
 		}
 		else
 		{
-			_putchar(x + '0');
+			_putchar(x);
 		}
 	}
 	_putchar('\n');
