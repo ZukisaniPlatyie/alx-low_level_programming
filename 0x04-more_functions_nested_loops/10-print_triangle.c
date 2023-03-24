@@ -16,16 +16,17 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (row = 1; row <= size; row++)
+		for (row = 0; row <= size; row++)
 		{
-			for (spc = size - row; spc >= 1; spc--)
+			for (spc = size - row; spc > 1; spc--)
 			{
 				_putchar(' ');
 			}
-			for (hash = 1; hash <= row; hash++)
+			for (hash = 0; hash <= row; hash++)
 			{
 				_putchar('#');
 			}
 			_putchar('\n');
 		}
+	}
 }
