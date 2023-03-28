@@ -33,6 +33,7 @@ int main(void)
 			if (psswrd[index] >= (33 + diff_half1))
 			{
 				psswrd[index] -= diff_half1;
+				break;
 			}
 		}
 		for (index = 0; psswrd[index]; index++)
@@ -40,6 +41,7 @@ int main(void)
 			if (psswrd[index] >= (33 + diff_half2))
 			{
 				psswrd[index] -= diff_half2;
+				break;
 			}
 		}
 	}
