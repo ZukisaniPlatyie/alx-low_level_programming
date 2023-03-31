@@ -1,26 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - checks code
- * Return: 0 always
+ * _strcat - strcat function
+ * @dest: 1st parameter
+ * @src: 2nd parameter
+ * Return: a string
  */
 
-int main(void)
+cha *_strcat(char *dest, char *src)
 {
-	char s1[98] = "Hello ";
-	char s2[] = "world\n";
-	char *ptr;
+	int len = 0, i;
 
-	printf("%s\n", s1);
-	printf("%s", s2);
-	ptr = _strcat(s1, s2, 1);
-	printf("%s\n", s1);
-	printf("%s", s2);
-	printf("%s\n", prt);
-	ptr = _strcat(s1, s2, 1024);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
-	return (0);
+	while (dest[len])
+	{
+		len++;
+	}
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[len] = src[i];
+		len += 1;
+	}
+	dest[len] = '\0';
+	return (dest);
 }
