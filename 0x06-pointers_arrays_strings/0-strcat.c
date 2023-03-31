@@ -9,7 +9,7 @@
  * Return: a string
  */
 
-cha *_strcat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src, int n)
 {
 	int len = 0, i = 0;
 
