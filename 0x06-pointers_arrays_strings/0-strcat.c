@@ -5,6 +5,7 @@
  * _strcat - strcat function
  * @dest: 1st parameter
  * @src: 2nd parameter
+ * @n: number of bytes from src to be appended to dest.
  * Return: a string
  */
 
@@ -18,7 +19,7 @@ cha *_strcat(char *dest, char *src, int n)
 	}
 	for (i = 0; src[i] && i < n; i++)
 	{
-		dest[len] = src[i];
+		dest[len++] = src[i];
 	}
 	return (dest);
 }
